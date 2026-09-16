@@ -2,7 +2,7 @@ body{
     background-color: #448adf;
 }
 
-.card{
+.card1{
     background-color: #ffffff;
     width: 400px;
     height: 200px;
@@ -12,3 +12,4 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
