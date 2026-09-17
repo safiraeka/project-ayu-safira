@@ -2,8 +2,9 @@ body{
     background-color: #a2acb3bc;
 }
 
+/*card about me*/
 .card1{
-    width: 450px;
+    width: 500px;
     height: 400px;
     background-color: #0c0880;
     border-radius: 50px;
@@ -11,11 +12,29 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 65%;
     transform: translate(-50%, -50%);
     color: white;
 }
 
+.card1 h1{
+    font-family: 'arial';
+    font-size: 35px;
+}
+
+.card1 p{
+    font-family: 'arial';
+    font-size: 20px;
+}
+
+.card1 .teks p{
+    font-family: 'arial';
+    font-size: 15px;
+    color: white;
+    text-align: justify;
+}
+
+/*card foto profil*/
 .card2{
     width: 400px;
     height: 400px;
@@ -25,6 +44,22 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 30%;
     transform: translate(-50%, -50%);
+}
+
+.card2 h1{
+    font-family: 'arial';
+}
+
+.card2 h2{
+    font-family: 'arial';
+    font-size: 15px;
+    color: #0c0880;
+}
+
+.card2 img{
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
 }
