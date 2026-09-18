@@ -1,14 +1,86 @@
-body{
-    background-color: #448adf;
+/* Halaman utama */
+body {
+  background-color: #a2acb3bc;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
-.card{
-    background-color: #ffffff;
-    width: 400px;
-    height: 200px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+h1 {
+  margin-top: 40px;
+}
+
+/* Bungkus dua kotak, dibuat sejajar pakai flexbox */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* Kotak dasar (dipakai oleh kotak putih dan kotak biru) */
+.box {
+  width: 220px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Kotak putih */
+.box-putih {
+  background-color: white;
+  border: 2px solid #333;
+  color: #333;
+}
+
+/* Kotak biru tua */
+.box-biru {
+  background-color: #14213d;
+  color: white;
+}
+
+/* Foto di dalam kotak */
+.box img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Panah ke bawah */
+.panah {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 28px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.box-putih .panah:hover {
+  color: #14213d;
+}
+
+.box-biru .panah:hover {
+  color: #ffd60a;
+}
+
+/* Halaman About Me */
+.about-me {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.foto-besar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.tombol-kembali {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #14213d;
+  font-weight: bold;
 }
