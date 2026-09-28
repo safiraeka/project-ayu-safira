@@ -1,39 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Ayu</title>
-    <link rel="stylesheet" href="gayayu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Ayu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="gayayu.css">
 </head>
 <body>
-    <div class="card1"> <!---card yang sebelah kanan tampilan-->
-        <h1><center>Tentang Ayu</center></h1>
-        <br>
-        <p><i>"Tak kenal maka tak sayang, sudah kenal mari jadi justfriend."</i></p>
-        <br>
-        <div class="teks">
-            <p>
-                Ayu Rahma Diah Herdi bisa di panggil "Edoy" atau "Ayu", sebagai mahasiswa informatika di universitas sultan agen tirtaya angkatan 2025.
-    
-            </p>
-            <p>
-                saya lahir di kota serang, 18 maret 2008 dan memiliki zodiak pisces, dan kehidupan saya penuh dengan drama.
-            </p>
-            <p>
-                Saya memiliki keperibadian ekstrovet, ceria dan penuh semangat, saya senang menghabiskan waktu di akhir pekan dengan teman teman, keliling mejelajahi dunia, dan mendengarkan musik.
-            </p>
-        </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Ayu & Safira</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ayu.html">Ayu</a></li>
+          <li class="nav-item"><a class="nav-link" href="safira.html">Safira</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+
+    <div class="card2">
+      <img src="foto ayu.jpeg" alt="fotoayu">
+      <h1>Ayu Rahma Diah Herdi</h1>
+      <h2>== Pendatang Baru di Informatika ==</h2>
     </div>
 
-    <div class="card2"> <!---card yang sebelah kiri tampilan-->
-        <div class="foto">
-            <center><img src="foto ayu.jpeg" alt="fotoayu" width="290" height="300"></center>
-        </div>
-        <h1><center>Ayu Rahma Diah Herdi</center></h1>
-        <h2><center>== Pendatang Baru di Informatika ==</center></h2>
+    <div class="card1">
+      <h1>Tentang Ayu</h1>
+      <p class="quote"><i>"Tak kenal maka tak sayang, sudah kenal mari jadi justfriend."</i></p>
+      <div class="teks">
+        <p>
+          Ayu Rahma Diah Herdi bisa di panggil "Edoy" atau "Ayu", sebagai mahasiswa informatika di universitas sultan agen tirtaya angkatan 2025.
+        </p>
+        <p>
+          saya lahir di kota serang, 18 maret 2008 dan memiliki zodiak pisces, dan kehidupan saya penuh dengan drama.
+        </p>
+        <p>
+          Saya memiliki keperibadian ekstrovet, ceria dan penuh semangat, saya senang menghabiskan waktu di akhir pekan dengan teman teman, keliling mejelajahi dunia, dan mendengarkan musik.
+        </p>
+      </div>
     </div>
 
+  </div>
 
+  <h2 class="judul-grid">Data Singkat</h2>
+  <div class="grid-info">
+    <div class="info"><b>Panggilan</b><br>Edoy / Ayu</div>
+    <div class="info"><b>Kota Lahir</b><br>Serang</div>
+    <div class="info"><b>Zodiak</b><br>Pisces</div>
+    <div class="info"><b>Angkatan</b><br>2025</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

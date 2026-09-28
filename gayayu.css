@@ -1,65 +1,124 @@
-body{
-    background-color: #a2acb3bc;
+* {
+  box-sizing: border-box;
 }
 
-/*card about me*/
-.card1{
-    width: 500px;
-    height: 400px;
-    background-color: #14213d;
-    border-radius: 50px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    color: white;
+body {
+  background-color: #a2acb3bc;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-.card1 h1{
-    font-family: 'arial';
-    font-size: 35px;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px 16px 0;
 }
 
-.card1 p{
-    font-family: 'arial';
-    font-size: 20px;
+.card2 {
+  width: 400px;
+  max-width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.card1 .teks p{
-    font-family: 'arial';
-    font-size: 15px;
-    color: white;
-    text-align: justify;
+.card2 img {
+  width: 250px;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
-/*card foto profil*/
-.card2{
-    width: 400px;
-    height: 400px;
-    background-color: #f5f5f5;
-    border-radius: 50px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+.card2 h1 {
+  font-size: clamp(22px, 5vw, 28px);
 }
 
-.card2 h1{
-    font-family: 'arial';
+.card2 h2 {
+  font-size: 15px;
+  color: #0c0880;
 }
 
-.card2 h2{
-    font-family: 'arial';
-    font-size: 15px;
-    color: #0c0880;
+.card1 {
+  width: 500px;
+  max-width: 100%;
+  background-color: #14213d;
+  border-radius: 40px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
-.card2 img{
-    width: 250px;
-    height: 300px;
-    border-radius: 20px;
+.card1 h1 {
+  font-size: clamp(26px, 6vw, 35px);
+  text-align: center;
+}
+
+.card1 .quote {
+  font-size: clamp(16px, 4vw, 20px);
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card1 .teks p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.judul-grid {
+  text-align: center;
+  margin-top: 40px;
+  font-size: clamp(22px, 5vw, 28px);
+}
+
+.grid-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: 24px auto 50px;
+  padding: 0 16px;
+}
+
+.info {
+  background-color: #14213d;
+  color: white;
+  padding: 20px 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.info:hover {
+  color: #ffd60a;
+}
+
+@media (max-width: 800px) {
+  .grid-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card1 {
+    padding: 22px;
+    border-radius: 30px;
+  }
+
+  .card2 {
+    border-radius: 30px;
+  }
+
+  .grid-info {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
 }
